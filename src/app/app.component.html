@@ -1,4 +1,10 @@
 <!--The content below is only a placeholder and can be replaced.-->
+<md-select placeholder="Favorite food">
+  <md-option *ngFor="let item of list; let i = index" [value]="i">
+    {{ item }}
+  </md-option>
+</md-select>
+
 <div style="text-align:center">
   <h1>
     Welcome to {{title}}!
